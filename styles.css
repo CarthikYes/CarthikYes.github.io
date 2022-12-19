@@ -156,9 +156,10 @@ object-fit: cover;
 }
 .tech-p{
    display: block;
-   border: 1px solid orange;
+   border: 1px solid white;
    font-size: 20px;
-   color: orangered;
+   color: white;
+   font-weight: bold;
 }
 .tech-flex{
    display: flex;
@@ -254,7 +255,7 @@ object-fit: cover;
       display: block;
       color: #f2f2f2;
       text-align: center;
-      padding: 20px 20px;
+      padding: 20px 10px;
       text-decoration: none;
    
    }
@@ -269,10 +270,14 @@ object-fit: cover;
       padding-top: 55px;
       padding-bottom: 55px;
       gap: 50px;
+
+      
    }
    #mainProject{
       display: block;
-      width: 90%;
+      width: 85%;
+      padding-right: 2%;
+      
    }
    #mainProject>div{
    width: 100%;
@@ -295,6 +300,7 @@ object-fit: cover;
     
      /* border: 1px solid red; */
    }
+  
 }
 .first{
    display: flex;
@@ -312,7 +318,8 @@ object-fit: cover;
     
    width: 250px; 
    height: 280px;
-   border-radius: 50%;
+   border-radius: 5%;
+   
    
 }
 /*github */
@@ -518,6 +525,7 @@ object-fit: cover;
    background-color:white;
    background-color:;
    color: black;
+   margin-top: -px;
 
 }
 .contact-left{
