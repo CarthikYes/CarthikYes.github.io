@@ -1,0 +1,605 @@
+
+*{
+   /* font-family: "Lucida Console", "Courier New", monospace; */
+   padding: 0;
+   margin: 0;
+}
+html{
+   scroll-behavior: smooth;
+}
+p{
+   font-size: 18px;
+}
+
+.navbar{
+   background-color: blue;
+   color:  white;
+   overflow: hidden;
+   /* background-color: rgb(39, 47, 52); */
+   background-color:#88B04B;
+   position: fixed;
+   top: 0px;
+   width: 100%;
+  display: flex;
+  justify-content: space-between;
+   
+}
+.navbar>div{
+   font-size: 25px;
+   display: flex;
+   justify-content: flex-end;
+}
+.navbar>div>a{
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+
+}
+.navbar>div>a:hover {
+   background: #ddd;
+   color: black;
+ }
+.intro{
+   background-color:white;
+   color: white;
+   margin-top: 55px;
+   padding-top: 55px;
+   padding-bottom: 55px;
+   color: black;
+   
+}
+.skill{
+   background-color: white;
+   /* background-color: ; */
+   padding-top: 55px;
+   padding-bottom: 55px;
+   color: black;
+}
+.skill>div>img{
+   height: 60px;
+   width: 60px;
+   /* background-color: rgb(54, 54, 54); */
+   padding: 10px;
+   border-radius: 8px;
+   /* border: 1px solid black; */
+}
+.skill>div>img:hover{
+   background-color: white;
+} 
+.icons{
+   display: flex;
+   justify-content: center;
+   gap: 25px;
+   width: 50%;
+   margin: auto;
+
+}
+#project{
+   background-color:#88B04B;
+   background-color: ;
+   color: white;
+   padding-top: 55px;
+   padding-bottom: 55px;
+}
+.contact{
+   background-color: rgb(0, 0, 0);
+   color: rgb(255, 249, 249);
+}
+
+.center{
+   text-align: center;
+   padding: 10px;
+}
+.resumebtn{
+   padding: 10px 16px;
+   background-color: rgb(23, 135, 246);
+   color: white;
+   border: 0px;
+}
+.resumebtn:hover{
+   background-color: rgb(10, 121, 231);
+   color: white;
+   cursor: pointer;
+}
+.project_show{
+   display: flex;
+   justify-content: space-between;
+   width: 65%;
+   margin: auto;
+ 
+}
+/* Project css */
+#mainProject{
+   width: 70%;
+   display: flex;
+   margin: 20px auto;
+   justify-content: space-between;
+
+
+}
+#mainProject>div{
+width: 48%;
+/* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+padding: 5px;
+}
+.imageCont{
+   display: flex;
+   width: 100%;   
+}
+.imgCont>img{
+  width: 100%;
+  height: 100%;
+object-fit: cover;
+}
+.btns{
+   display: flex;
+   margin: auto;
+    /* align-items: center; */
+   justify-content: space-between; 
+   gap: 40px;
+   
+}
+.btns-live{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+
+.live_git{
+   padding: 10px 14px;
+   background-color:rgb(10,121,231);
+   border: 0px;
+   color: white;
+
+}
+.tech-p{
+   display: block;
+   border: 1px solid white;
+   font-size: 20px;
+   color: white;
+   font-weight: bold;
+}
+.tech-flex{
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   width: 80%;
+   margin: auto;
+   margin-bottom: 10px;
+}
+.live_git:hover{
+   background-color: rgb(23, 135, 246);
+   cursor: pointer;
+}
+/* fa icons design and size */
+.fa-icons{
+   text-align: center;
+   display: flex;
+   justify-content: space-between;
+   width: 30%;
+   margin: auto;
+   
+}
+.fa{
+   font-size: 25px;
+   padding: 15px;
+   border-radius: 8px;
+   color:#0e1629;
+   border: 1px solid black;
+}
+.fa:hover{
+   background-color: white;
+   border: 1px solid #0e1629;
+
+}
+.footer{
+   background-color: #0e1629;
+   color: white;
+}
+#contact{
+   padding-top: 55px;
+   padding-bottom: 55px;
+}
+.tech-stack{
+   display: flex;
+
+   justify-content: space-between;
+   gap: 20px;
+   align-items: center;
+}
+.tech-stack>p{
+   color: orange;
+}
+.js-img{
+   width: 30px;
+   height: 30px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 667px) {
+
+   
+
+   .skill>div>img{
+      height: 40px;
+      width: 40px;
+            background-color: rgb(54, 54, 54);
+      padding: 10px;
+      border-radius: 8px;
+      /* border: 1px solid black; */
+   }
+   .fa-icons{
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      width: 60%;
+      margin: auto;
+      
+   }
+   .fa{
+      font-size: 25px;
+      padding: 10px;
+      border-radius: 8px;
+      color:#0e1629;
+      border: 1px solid black;
+   }
+   .navbar>div{
+      font-size: 15px;
+      display: flex;
+      justify-content: flex-end;
+   }
+   .navbar>div>a{
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 20px 10px;
+      text-decoration: none;
+   
+   }
+   .row{
+      display: flex;
+      flex-direction: column;
+      font-size: 15px;
+   }
+   #project{
+      background-color: #0e1629;
+      color: white;
+      padding-top: 55px;
+      padding-bottom: 55px;
+      gap: 50px;
+
+      
+   }
+   #mainProject{
+      display: block;
+      width: 85%;
+      padding-right: 2%;
+      
+   }
+   #mainProject>div{
+   width: 100%;
+   }
+   .live_git{
+      padding: 10px 14px;
+      background-color:rgb(10,121,231);
+      border: 0px;
+      color: white;
+   
+   }
+   p{
+      font-size: small;
+   }
+  
+   .first{
+      display: block;
+      margin: auto;
+      flex-direction: column;
+    
+     /* border: 1px solid red; */
+   }
+  
+}
+.first{
+   display: flex;
+   width: 70%;
+   margin: auto;
+   gap: 25px;
+   justify-content: space-between;
+   align-items: center;
+  /* border: 1px solid red; */
+}
+.first  div{
+   /* border: 1px solid red; */
+}
+.first>div>img{
+    
+   width: 250px; 
+   height: 280px;
+   border-radius: 5%;
+   
+   
+}
+/*github */
+
+:root {
+   --color-calendar-graph-day-bg: #dddbdb;
+   --color-calendar-graph-day-L1-bg: #39dd34;
+   --color-calendar-graph-day-L2-bg: #45a045;
+   --color-calendar-graph-day-L3-bg: #047526;
+   --color-calendar-graph-day-L4-bg: #0a4208;
+ }
+ 
+ rect.ContributionCalendar-day[data-level='0'] {
+     fill: var(--color-calendar-graph-day-bg);
+ }
+ 
+ rect.ContributionCalendar-day[data-level='1'] {
+     fill: var(--color-calendar-graph-day-L1-bg);
+ }
+ 
+ rect.ContributionCalendar-day[data-level='2'] {
+     fill: var(--color-calendar-graph-day-L2-bg);
+ }
+ 
+ rect.ContributionCalendar-day[data-level='3'] {
+     fill: var(--color-calendar-graph-day-L3-bg);
+ }
+ 
+ rect.ContributionCalendar-day[data-level='4'] {
+     fill: var(--color-calendar-graph-day-L4-bg);
+ }
+ 
+ .calendar .width-full > .float-left {
+     display: none;
+ }
+ 
+ .calendar {
+     font-family: Helvetica, arial;
+     border: 1px solid #DDDDDD;
+     border-radius: 3px;
+     min-height: 243px;
+     text-align: center;
+     margin: 0 auto;
+ }
+ 
+ .calendar-graph text.wday,
+ .calendar-graph text.month {
+     font-size: 10px;
+     fill: #aaa;
+ }
+ 
+ .contrib-legend {
+     text-align: right;
+     padding: 0 14px 10px 0;
+     display: inline-block;
+     float: right;
+ }
+ 
+ .contrib-legend .legend {
+     display: inline-block;
+     list-style: none;
+     margin: 0 5px;
+     position: relative;
+     bottom: -1px;
+     padding: 0;
+ }
+ 
+ .contrib-legend .legend li {
+     display: inline-block;
+     width: 10px;
+     height: 10px;
+ }
+ 
+ .text-small {
+     font-size: 12px;
+     color: #767676;
+ }
+ 
+ .calendar-graph {
+     padding: 5px 0 0;
+     text-align: center;
+ }
+ 
+ .contrib-column {
+     padding: 15px 0;
+     text-align: center;
+     border-left: 1px solid #ddd;
+     border-top: 1px solid #ddd;
+     font-size: 11px;
+ }
+ 
+ .contrib-column-first {
+     border-left: 0;
+ }
+ 
+ .table-column {
+     display: table-cell;
+     width: 1%;
+     padding-right: 10px;
+     padding-left: 10px;
+     vertical-align: top;
+ }
+ 
+ .contrib-number {
+     font-weight: 300;
+     line-height: 1.3em;
+     font-size: 24px;
+     display: block;
+     color: #333;
+ }
+ 
+ .calendar img.spinner {
+     width: 70px;
+     margin-top: 50px;
+     min-height: 70px;
+ }
+ 
+ .monospace {
+     text-align: center;
+     color: #000;
+     font-family: monospace;
+ }
+ 
+ .monospace a {
+     color: #1D75AB;
+     text-decoration: none;
+ }
+ 
+ .contrib-footer {
+     font-size: 11px;
+     padding: 0 10px 12px;
+     text-align: left;
+     width: 100%;
+     box-sizing: border-box;
+     height: 26px;
+ }
+ 
+ .left.text-muted {
+     float: left;
+     margin-left: 9px;
+     color: #767676;
+ }
+ .left.text-muted a {
+     color: #4078c0;
+     text-decoration: none;
+ }
+ .left.text-muted a:hover,
+ .monospace a:hover {
+     text-decoration: underline;
+ }
+ 
+ h2.f4.text-normal.mb-3 {
+     display: none;
+ }
+ 
+ .float-left.text-gray {
+     float: left;
+ }
+ #user-activity-overview{
+     display:none;
+ }
+ 
+ .day-tooltip {
+     white-space: nowrap;
+     position: absolute;
+     z-index: 99999;
+     padding: 10px;
+     font-size: 12px;
+     color: #959da5;
+     text-align: center;
+     background: rgba(0,0,0,.85);
+     border-radius: 3px;
+     display: none;
+     pointer-events: none;
+ }
+ .day-tooltip strong {
+     color: #dfe2e5;
+ }
+ .day-tooltip.is-visible {
+     display: block;
+ }
+ .day-tooltip:after {
+     position: absolute;
+     bottom: -10px;
+     left: 50%;
+     width: 5px;
+     height: 5px;
+     box-sizing: border-box;
+     margin: 0 0 0 -5px;
+     content: " ";
+     border: 5px solid transparent;
+     border-top-color: rgba(0,0,0,.85)
+ }
+ 
+ text.ContributionCalendar-label {
+     fill: #ccc;
+     font-size: 11px;
+ }
+
+ /* ks */
+ #contact{
+   margin-top: 100px;
+   background-color:white;
+   background-color:;
+   color: black;
+   margin-top: -px;
+
+}
+.contact-left{
+   flex-basis: 35%;
+}
+.contact-right{
+   flex-basis: 60%;
+}
+.contact-left p{
+   margin-top: 30px;
+}
+.contact-left p i{
+   color: #88B04B;
+   margin-right: 15px;
+   font-size: 25px;
+}
+.social-icons{
+   margin-top: 30px;
+}
+.social-icons a{
+   text-decoration: none;
+   font-size: 30px;
+   margin-right: 15px;
+   color: #ABABAB;
+   display: inline-block;
+   transition: transform 0.5s;
+}
+.social-icons a:hover{
+   color: #88B04B;
+   transform: translateY(-5px);
+}
+.btn.btn2
+{
+   display: inline-block;
+   background: #88B04B;
+   border: 0px;
+
+}
+.btn.btn2:hover{
+   cursor: pointer;
+}
+.contact-right form{
+   width: 90%;
+}
+form input, form textarea{
+   width: 100%;
+   border: 0;
+   outline: none;
+   background: #88B04B;
+   padding: 15px;
+   margin: 15px 0;
+   color: black;
+   font-size: 18px;
+   border-radius: 6px;
+}
+form .btn2{
+   padding: 14px 60px;
+   font-size: 18px;
+   margin-top: 20px;
+   cursor: pointer;
+}
+.copyright{
+   width:100%;
+   text-align: center;
+   padding: 25px 0;
+   background: #262626;
+   font-weight: 300;
+   margin-top: 20px;
+}
+.copyright *{
+   color:#88B04B;
+}
+.row{
+   display: flex;
+   width: 80%;
+   margin:auto;
+}
